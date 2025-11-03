@@ -35,6 +35,15 @@ a:hover{ text-decoration: underline; }
   padding: 96px 20px 72px; text-align:center; max-width: 900px; margin: 0 auto;
 }
 .hero h1{ font-size: 40px; font-weight: 800; }
+@keyframes rainbow {
+  0% { color: #ff0000; }
+  16% { color: #ff7f00; }
+  33% { color: #ffff00; }
+  50% { color: #00ff00; }
+  66% { color: #0000ff; }
+  83% { color: #4b0082; }
+  100% { color: #8f00ff; }
+}
 .accent{ color: var(--accent); 
        transition: color 0.3s ease;
 }
