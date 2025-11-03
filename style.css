@@ -45,7 +45,7 @@ a:hover{ text-decoration: underline; }
 .avatar{ width:160px; height:160px; object-fit:cover; border-radius:50%; border:3px solid rgba(255,255,255,0.15); }
 .tags{ display:flex; flex-wrap:wrap; gap:8px; margin: 12px 0 0; padding:0; list-style:none; }
 .tags li{ background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.08); padding:6px 10px; border-radius:999px; color:var(--text);}
-.grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:16px; }
+.grid{ display:grid; grid-template-columns: repeat(4,1fr); gap:16px; }
 .card{
   background: var(--card); border:1px solid rgba(255,255,255,0.08);
   border-radius:16px; padding:18px;
@@ -67,6 +67,9 @@ textarea{ min-height: 140px; resize: vertical; }
 .status.ok{ color:#95f3c7; }
 .status.err{ color:#ff9aa2; }
 .site-footer{ padding: 36px 20px; text-align:center; color:var(--muted); border-top:1px solid rgba(255,255,255,0.06); }
+@media (max-width: 1100px){
+  .grid{ grid-template-columns: repeat(3,1fr); }
+}
 @media (max-width: 900px){
   .grid{ grid-template-columns: 1fr 1fr; }
 }
